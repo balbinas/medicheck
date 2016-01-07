@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Nombre</key>
+		<string>Luis Alberto</string>
+		<key>Apellido</key>
+		<string>Gutiérrez Valladares</string>
+		<key>Fecha de nacimiento</key>
+		<string>29/03/1945</string>
+		<key>Sexo</key>
+		<string>Masculino</string>
+	</dict>
+	<dict>
+		<key>Nombre</key>
+		<string>Luis Jorge</string>
+		<key>Apellido</key>
+		<string>Remes Quiroz</string>
+		<key>Fecha de nacimiento</key>
+		<string>11/02/1949</string>
+		<key>Sexo</key>
+		<string>Masculino</string>
+	</dict>
+	<dict>
+		<key>Nombre</key>
+		<string>Alejandra</string>
+		<key>Apellido</key>
+		<string>Granada Torres</string>
+		<key>Fecha de nacimiento</key>
+		<string>04/03/1946</string>
+		<key>Sexo</key>
+		<string>Femenino</string>
+	</dict>
+</array>
+</plist>
