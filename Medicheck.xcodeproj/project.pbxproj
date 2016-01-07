@@ -16,6 +16,7 @@
 		37A4F67E1C3EC26C003A9645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A4F67C1C3EC26C003A9645 /* LaunchScreen.storyboard */; };
 		37A4F6891C3EC26D003A9645 /* MedicheckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6881C3EC26D003A9645 /* MedicheckTests.m */; };
 		37A4F6941C3EC26D003A9645 /* MedicheckUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6931C3EC26D003A9645 /* MedicheckUITests.m */; };
+		37A4F6A31C3EC9CC003A9645 /* medichequeo.png in Resources */ = {isa = PBXBuildFile; fileRef = 37A4F6A21C3EC9CC003A9645 /* medichequeo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		37A4F68F1C3EC26D003A9645 /* MedicheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedicheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A4F6931C3EC26D003A9645 /* MedicheckUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedicheckUITests.m; sourceTree = "<group>"; };
 		37A4F6951C3EC26D003A9645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37A4F6A21C3EC9CC003A9645 /* medichequeo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medichequeo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		37A4F66A1C3EC26C003A9645 /* Medicheck */ = {
 			isa = PBXGroup;
 			children = (
+				37A4F6A11C3EC92E003A9645 /* Images */,
 				37A4F66E1C3EC26C003A9645 /* AppDelegate.h */,
 				37A4F66F1C3EC26C003A9645 /* AppDelegate.m */,
 				37A4F6711C3EC26C003A9645 /* ViewController.h */,
@@ -141,6 +144,14 @@
 				37A4F6951C3EC26D003A9645 /* Info.plist */,
 			);
 			path = MedicheckUITests;
+			sourceTree = "<group>";
+		};
+		37A4F6A11C3EC92E003A9645 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				37A4F6A21C3EC9CC003A9645 /* medichequeo.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +260,7 @@
 				37A4F67E1C3EC26C003A9645 /* LaunchScreen.storyboard in Resources */,
 				37A4F67B1C3EC26C003A9645 /* Assets.xcassets in Resources */,
 				37A4F6761C3EC26C003A9645 /* Main.storyboard in Resources */,
+				37A4F6A31C3EC9CC003A9645 /* medichequeo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +514,7 @@
 				37A4F69A1C3EC26D003A9645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37A4F69B1C3EC26D003A9645 /* Build configuration list for PBXNativeTarget "MedicheckTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +523,7 @@
 				37A4F69D1C3EC26D003A9645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37A4F69E1C3EC26D003A9645 /* Build configuration list for PBXNativeTarget "MedicheckUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +532,7 @@
 				37A4F6A01C3EC26D003A9645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
