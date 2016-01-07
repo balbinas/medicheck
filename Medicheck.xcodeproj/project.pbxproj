@@ -16,6 +16,9 @@
 		37A4F67E1C3EC26C003A9645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A4F67C1C3EC26C003A9645 /* LaunchScreen.storyboard */; };
 		37A4F6891C3EC26D003A9645 /* MedicheckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6881C3EC26D003A9645 /* MedicheckTests.m */; };
 		37A4F6941C3EC26D003A9645 /* MedicheckUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6931C3EC26D003A9645 /* MedicheckUITests.m */; };
+		37A4F6A51C3ED0F2003A9645 /* medisave.png in Resources */ = {isa = PBXBuildFile; fileRef = 37A4F6A41C3ED0F2003A9645 /* medisave.png */; };
+		37A4F6A81C3EE500003A9645 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A4F6A71C3EE500003A9645 /* Images.xcassets */; };
+		37A4F6AA1C3EE616003A9645 /* usuarios.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37A4F6A91C3EE616003A9645 /* usuarios.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		37A4F68F1C3EC26D003A9645 /* MedicheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedicheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A4F6931C3EC26D003A9645 /* MedicheckUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedicheckUITests.m; sourceTree = "<group>"; };
 		37A4F6951C3EC26D003A9645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37A4F6A41C3ED0F2003A9645 /* medisave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medisave.png; sourceTree = "<group>"; };
+		37A4F6A71C3EE500003A9645 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		37A4F6A91C3EE616003A9645 /* usuarios.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = usuarios.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +109,19 @@
 		37A4F66A1C3EC26C003A9645 /* Medicheck */ = {
 			isa = PBXGroup;
 			children = (
+				37A4F6A61C3ED291003A9645 /* Login */,
+				37A4F6A11C3EC92E003A9645 /* Images */,
 				37A4F66E1C3EC26C003A9645 /* AppDelegate.h */,
 				37A4F66F1C3EC26C003A9645 /* AppDelegate.m */,
 				37A4F6711C3EC26C003A9645 /* ViewController.h */,
 				37A4F6721C3EC26C003A9645 /* ViewController.m */,
 				37A4F6741C3EC26C003A9645 /* Main.storyboard */,
+				37A4F6A91C3EE616003A9645 /* usuarios.plist */,
 				37A4F67A1C3EC26C003A9645 /* Assets.xcassets */,
 				37A4F67C1C3EC26C003A9645 /* LaunchScreen.storyboard */,
 				37A4F67F1C3EC26C003A9645 /* Info.plist */,
 				37A4F6771C3EC26C003A9645 /* Medicheck.xcdatamodeld */,
+				37A4F6A71C3EE500003A9645 /* Images.xcassets */,
 				37A4F66B1C3EC26C003A9645 /* Supporting Files */,
 			);
 			path = Medicheck;
@@ -141,6 +151,21 @@
 				37A4F6951C3EC26D003A9645 /* Info.plist */,
 			);
 			path = MedicheckUITests;
+			sourceTree = "<group>";
+		};
+		37A4F6A11C3EC92E003A9645 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				37A4F6A41C3ED0F2003A9645 /* medisave.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		37A4F6A61C3ED291003A9645 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +235,7 @@
 				TargetAttributes = {
 					37A4F6671C3EC26C003A9645 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = JRS57GGB8R;
 					};
 					37A4F6831C3EC26D003A9645 = {
 						CreatedOnToolsVersion = 7.2;
@@ -247,6 +273,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				37A4F67E1C3EC26C003A9645 /* LaunchScreen.storyboard in Resources */,
+				37A4F6A81C3EE500003A9645 /* Images.xcassets in Resources */,
+				37A4F6A51C3ED0F2003A9645 /* medisave.png in Resources */,
+				37A4F6AA1C3EE616003A9645 /* usuarios.plist in Resources */,
 				37A4F67B1C3EC26C003A9645 /* Assets.xcassets in Resources */,
 				37A4F6761C3EC26C003A9645 /* Main.storyboard in Resources */,
 			);
@@ -417,10 +446,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Medicheck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BSM.Medicheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -428,10 +460,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Medicheck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BSM.Medicheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -502,6 +537,7 @@
 				37A4F69A1C3EC26D003A9645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37A4F69B1C3EC26D003A9645 /* Build configuration list for PBXNativeTarget "MedicheckTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +546,7 @@
 				37A4F69D1C3EC26D003A9645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37A4F69E1C3EC26D003A9645 /* Build configuration list for PBXNativeTarget "MedicheckUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +555,7 @@
 				37A4F6A01C3EC26D003A9645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
