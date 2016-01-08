@@ -357,6 +357,68 @@
             </objects>
             <point key="canvasLocation" x="2488.5" y="-51.5"/>
         </scene>
+        <!--Ofertas disponibles-->
+        <scene sceneID="o9r-ZG-7nt">
+            <objects>
+                <tableViewController id="yy8-R0-oJa" customClass="OfertasTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="280" sectionHeaderHeight="28" sectionFooterHeight="28" id="Knc-HV-ejl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" selectionStyle="default" indentationLevel="3" indentationWidth="10" reuseIdentifier="Cell" rowHeight="270" id="bvK-Nv-Hsa" customClass="CustomTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="375" height="270"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bvK-Nv-Hsa" id="e6u-UC-5T2">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="269"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5e-DZ-gYW">
+                                            <rect key="frame" x="21" y="196" width="340" height="38"/>
+                                            <string key="text">Nihil imperdiet doming id quod, mazim placerat facer possim assum. Qui facit eorum claritatem Investigationes demonstraverunt lectores.
+</string>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Farmaceutica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVF-ma-c3G">
+                                            <rect key="frame" x="21" y="242" width="245" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-$1,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeW-Nb-0ZS">
+                                            <rect key="frame" x="274" y="242" width="87" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.58132102269999997" blue="0.080542906210000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cupon1.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="jTS-kM-5OX">
+                                            <rect key="frame" x="0.0" y="8" width="375" height="196"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.64127758489999998" green="1" blue="0.52655590910000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="lbDiscount" destination="jeW-Nb-0ZS" id="g9s-MK-2r5"/>
+                                    <outlet property="lbOferta" destination="G5e-DZ-gYW" id="xez-L1-hPW"/>
+                                    <outlet property="lbOwner" destination="bVF-ma-c3G" id="xB4-Zh-fQn"/>
+                                    <segue destination="rxu-Wf-CuH" kind="show" identifier="showDetail" id="FfJ-rm-53b"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yy8-R0-oJa" id="56M-vV-6DL"/>
+                            <outlet property="delegate" destination="yy8-R0-oJa" id="Vhd-hI-gcx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Ofertas disponibles" id="qkC-Ed-gBC"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fa0-W1-E8j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2488.5" y="695.5"/>
+        </scene>
         <!--Paciente-->
         <scene sceneID="7WB-9J-nMc">
             <objects>
@@ -392,7 +454,7 @@
                                 <rect key="frame" x="220" y="305" width="111" height="134"/>
                                 <state key="normal" title="Button" image="ofertas-icon.png"/>
                                 <connections>
-                                    <segue destination="faP-q2-oii" kind="show" id="06m-L8-ghP"/>
+                                    <segue destination="yy8-R0-oJa" kind="show" identifier="" id="CtJ-Yk-7MA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -467,34 +529,105 @@
             </objects>
             <point key="canvasLocation" x="1948.5" y="1548.5"/>
         </scene>
-        <!--Ofertas-->
-        <scene sceneID="g8s-D4-8JZ">
+        <!--Oferta-->
+        <scene sceneID="xyO-bY-eFd">
             <objects>
-                <viewController id="faP-q2-oii" sceneMemberID="viewController">
+                <viewController id="rxu-Wf-CuH" customClass="OfertaDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kZE-Tu-PCx"/>
-                        <viewControllerLayoutGuide type="bottom" id="Kti-go-51i"/>
+                        <viewControllerLayoutGuide type="top" id="VNV-YL-86b"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lk5-cr-p0J"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cQv-6S-drA">
+                    <view key="view" contentMode="scaleToFill" id="1hC-LA-VQn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ce3-Y4-28g">
-                                <rect key="frame" x="37" y="77" width="300" height="29"/>
-                                <segments>
-                                    <segment title="Para mi"/>
-                                    <segment title="Todos"/>
-                                </segments>
-                                <color key="tintColor" red="0.0" green="0.58132102269999997" blue="0.080542906210000001" alpha="1" colorSpace="calibratedRGB"/>
-                            </segmentedControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XWn-9D-mDC">
+                                <rect key="frame" x="0.0" y="-1" width="375" height="669"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cupon1.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="5bC-AF-8rr">
+                                        <rect key="frame" x="0.0" y="65" width="375" height="169"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Id-Al-8bW">
+                                        <rect key="frame" x="0.0" y="247" width="375" height="127"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAv-Zb-RNC">
+                                                <rect key="frame" x="10" y="13" width="355" height="91"/>
+                                                <string key="text">Nihil imperdiet doming id quod, mazim placerat facer possim assum. Qui facit eorum claritatem Investigationes demonstraverunt lectores.
+</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-10,000%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C18-Oi-o7W">
+                                                <rect key="frame" x="243" y="98" width="117" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.58132102269999997" blue="0.080542906210000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Farmaceutica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ym-Aj-zTM">
+                                                <rect key="frame" x="10" y="98" width="234" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ai7-si-mgT">
+                                        <rect key="frame" x="0.0" y="382" width="375" height="105"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contacto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8T-TD-8xt">
+                                                <rect key="frame" x="8" y="8" width="179" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xks-8Y-CiS">
+                                                <rect key="frame" x="8" y="27" width="359" height="70"/>
+                                                <string key="text">Investigationes demonstraverunt lectores legere me lius quod ii; legunt saepius claritas est. Vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat vel illum dolore. Quis nostrud exerci tation ullamcorper suscipit lobortis nisl. Nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y0k-V5-C9F">
+                                        <rect key="frame" x="0.0" y="495" width="375" height="166"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Letra chiquita" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEk-yp-DAA">
+                                                <rect key="frame" x="8" y="8" width="126" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2H2-by-TUc">
+                                                <rect key="frame" x="8" y="28" width="359" height="70"/>
+                                                <string key="text">Investigationes demonstraverunt lectores legere me lius quod ii; legunt saepius claritas est. Vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat vel illum dolore. Quis nostrud exerci tation ullamcorper suscipit lobortis nisl. Nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.64127758489999998" green="1" blue="0.52655590910000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Ofertas" id="QfZ-7L-fat"/>
+                    <navigationItem key="navigationItem" title="Oferta" id="rSS-dc-PpK"/>
+                    <connections>
+                        <outlet property="lbContact" destination="xks-8Y-CiS" id="6A5-AC-Lf3"/>
+                        <outlet property="lbDetails" destination="2H2-by-TUc" id="Uem-IN-dPY"/>
+                        <outlet property="lbDiscount" destination="C18-Oi-o7W" id="4Ql-Tb-tOT"/>
+                        <outlet property="lbOferta" destination="TAv-Zb-RNC" id="hHf-X2-05Y"/>
+                        <outlet property="lbOwner" destination="0Ym-Aj-zTM" id="xSH-id-8sb"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GsO-lO-eTm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N73-re-ts8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2519.5" y="695.5"/>
+            <point key="canvasLocation" x="3005.5" y="695.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kZn-ea-K1w">
@@ -926,6 +1059,7 @@
     </scenes>
     <resources>
         <image name="abuelo1.jpg" width="1600" height="1600"/>
+        <image name="cupon1.JPG" width="3264" height="2448"/>
         <image name="medicinas-icon.png" width="197" height="243"/>
         <image name="medisave.png" width="261" height="131"/>
         <image name="ofertas-icon.png" width="197" height="243"/>

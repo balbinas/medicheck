@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Contact</key>
+		<string>Marcar a Juanita al 081800Teleton</string>
+		<key>Details</key>
+		<string>Remicital de 20mg / 15 tabletas. Vigencia al 31 de diciembre de 2015</string>
+		<key>Oferta</key>
+		<string>50% de descuento en Remicital de 20mg / 15 tabletas</string>
+		<key>Owner</key>
+		<string>San Pablo Farmacia</string>
+		<key>Discount</key>
+		<string>50%</string>
+		<key>urlFoto</key>
+		<string>https://previews.123rf.com/images/lq75/lq751301/lq75130100047/17356770-Pill-box-on-white-background-Stock-Vector-box-medicine-design.jpg</string>
+	</dict>
+	<dict>
+		<key>Contact</key>
+		<string>Tel 01 800 36 297 2583 o consultar www.mazsalud.com</string>
+		<key>Details</key>
+		<string>Promocion valida hasta 31 de marzo de 2016</string>
+		<key>Oferta</key>
+		<string>En la compra de 2 cajas, usted llevara sin costo 1 caja mas de la misma presentacion</string>
+		<key>Owner</key>
+		<string>Eklira Genuair</string>
+		<key>Discount</key>
+		<string>2+1</string>
+		<key>urlFoto</key>
+		<string></string>
+	</dict>
+</array>
+</plist>

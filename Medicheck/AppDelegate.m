@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "OfertaDetailViewController.h"
 
 @interface AppDelegate ()
 

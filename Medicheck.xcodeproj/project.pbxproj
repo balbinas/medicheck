@@ -27,6 +27,11 @@
 		37A4F6C31C3F62CF003A9645 /* Paciente.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6C21C3F62CF003A9645 /* Paciente.m */; };
 		37A4F6C61C3F7F59003A9645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A4F6C41C3F7F59003A9645 /* Main.storyboard */; };
 		37A4F6C91C3F90A1003A9645 /* VerPacienteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6C81C3F90A1003A9645 /* VerPacienteViewController.m */; };
+		37A4F6CC1C3FB055003A9645 /* cupon1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 37A4F6CB1C3FB055003A9645 /* cupon1.JPG */; };
+		37A4F6D01C3FBD09003A9645 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6CF1C3FBD09003A9645 /* CustomTableViewCell.m */; };
+		37A4F6D51C3FBF12003A9645 /* ofertasList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37A4F6D41C3FBF12003A9645 /* ofertasList.plist */; };
+		37A4F6D81C3FC25C003A9645 /* OfertaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6D71C3FC25C003A9645 /* OfertaDetailViewController.m */; };
+		37A4F6DB1C3FC9B1003A9645 /* OfertasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6DA1C3FC9B1003A9645 /* OfertasTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +85,14 @@
 		37A4F6C51C3F7F59003A9645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37A4F6C71C3F90A1003A9645 /* VerPacienteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerPacienteViewController.h; sourceTree = "<group>"; };
 		37A4F6C81C3F90A1003A9645 /* VerPacienteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerPacienteViewController.m; sourceTree = "<group>"; };
+		37A4F6CB1C3FB055003A9645 /* cupon1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cupon1.JPG; sourceTree = "<group>"; };
+		37A4F6CE1C3FBD09003A9645 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		37A4F6CF1C3FBD09003A9645 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		37A4F6D41C3FBF12003A9645 /* ofertasList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ofertasList.plist; sourceTree = "<group>"; };
+		37A4F6D61C3FC25C003A9645 /* OfertaDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfertaDetailViewController.h; sourceTree = "<group>"; };
+		37A4F6D71C3FC25C003A9645 /* OfertaDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfertaDetailViewController.m; sourceTree = "<group>"; };
+		37A4F6D91C3FC9B1003A9645 /* OfertasTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfertasTableViewController.h; sourceTree = "<group>"; };
+		37A4F6DA1C3FC9B1003A9645 /* OfertasTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfertasTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +143,7 @@
 		37A4F66A1C3EC26C003A9645 /* Medicheck */ = {
 			isa = PBXGroup;
 			children = (
+				37A4F6CD1C3FBCE7003A9645 /* Ofertas */,
 				37A4F6A61C3ED291003A9645 /* Login */,
 				37A4F6B71C3F3936003A9645 /* Paciente */,
 				37A4F6A11C3EC92E003A9645 /* Images */,
@@ -179,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				37A4F6AB1C3F146C003A9645 /* medicinas-icon.png */,
+				37A4F6CB1C3FB055003A9645 /* cupon1.JPG */,
 				37A4F6AF1C3F1FB1003A9645 /* abuelo1.jpg */,
 				37A4F6AC1C3F146C003A9645 /* ofertas-icon.png */,
 				37A4F6A41C3ED0F2003A9645 /* medisave.png */,
@@ -208,6 +223,20 @@
 				37A4F6C81C3F90A1003A9645 /* VerPacienteViewController.m */,
 			);
 			name = Paciente;
+			sourceTree = "<group>";
+		};
+		37A4F6CD1C3FBCE7003A9645 /* Ofertas */ = {
+			isa = PBXGroup;
+			children = (
+				37A4F6CE1C3FBD09003A9645 /* CustomTableViewCell.h */,
+				37A4F6CF1C3FBD09003A9645 /* CustomTableViewCell.m */,
+				37A4F6D41C3FBF12003A9645 /* ofertasList.plist */,
+				37A4F6D91C3FC9B1003A9645 /* OfertasTableViewController.h */,
+				37A4F6DA1C3FC9B1003A9645 /* OfertasTableViewController.m */,
+				37A4F6D61C3FC25C003A9645 /* OfertaDetailViewController.h */,
+				37A4F6D71C3FC25C003A9645 /* OfertaDetailViewController.m */,
+			);
+			name = Ofertas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +345,8 @@
 			files = (
 				37A4F6B01C3F1FB1003A9645 /* abuelo1.jpg in Resources */,
 				37A4F6C61C3F7F59003A9645 /* Main.storyboard in Resources */,
+				37A4F6D51C3FBF12003A9645 /* ofertasList.plist in Resources */,
+				37A4F6CC1C3FB055003A9645 /* cupon1.JPG in Resources */,
 				37A4F67E1C3EC26C003A9645 /* LaunchScreen.storyboard in Resources */,
 				37A4F6AD1C3F146C003A9645 /* medicinas-icon.png in Resources */,
 				37A4F6A81C3EE500003A9645 /* Images.xcassets in Resources */,
@@ -352,9 +383,12 @@
 				37A4F6C31C3F62CF003A9645 /* Paciente.m in Sources */,
 				37A4F6BD1C3F3BF8003A9645 /* ListaPacientesTableViewController.m in Sources */,
 				37A4F6C01C3F4D00003A9645 /* PacienteAppsViewController.m in Sources */,
+				37A4F6DB1C3FC9B1003A9645 /* OfertasTableViewController.m in Sources */,
 				37A4F6C91C3F90A1003A9645 /* VerPacienteViewController.m in Sources */,
 				37A4F66D1C3EC26C003A9645 /* main.m in Sources */,
 				37A4F6B61C3F3197003A9645 /* PacienteAgregarViewController.m in Sources */,
+				37A4F6D01C3FBD09003A9645 /* CustomTableViewCell.m in Sources */,
+				37A4F6D81C3FC25C003A9645 /* OfertaDetailViewController.m in Sources */,
 				37A4F6791C3EC26C003A9645 /* Medicheck.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
