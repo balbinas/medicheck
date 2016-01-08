@@ -87,7 +87,7 @@
 
 //nom withCompuesto:comp withDosis:dosi withUnidades:uni withPeriodo:peri withStartTime:horaIni
 {
-    Meds *tmp = [[Meds alloc] initWithNombre:nom dosage:(long)dosi componente:comp measure:uni period:peri horaInicio:horaIni];
+    Meds *tmp = [[Meds alloc] initWithNombre:nom dosage:(long*)dosi componente:comp measure:uni period:peri horaInicio:horaIni];
     NSLog(@"Agrego A Arreglo");
     [self.listaMedicinas addObject:tmp];
     [self.tableView reloadData];
