@@ -103,29 +103,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.64127758489999998" green="1" blue="0.52655590910000005" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="HDj-Mn-Huo" detailTextLabel="knI-Zm-hof" style="IBUITableViewCellStyleSubtitle" id="Cjg-Qd-CW7">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="FsZ-vq-0tl" style="IBUITableViewCellStyleDefault" id="Cjg-Qd-CW7">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cjg-Qd-CW7" id="d1b-qB-vbt">
                                     <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HDj-Mn-Huo">
-                                            <rect key="frame" x="15" y="5" width="32" height="20"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FsZ-vq-0tl">
+                                            <rect key="frame" x="15" y="0.0" width="325" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="knI-Zm-hof">
-                                            <rect key="frame" x="15" y="25" width="31" height="14"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <connections>
                                     <segue destination="TXH-Ci-Us2" kind="show" id="2lc-On-SvH"/>
                                 </connections>
@@ -150,10 +144,10 @@
             </objects>
             <point key="canvasLocation" x="1445.5" y="337.5"/>
         </scene>
-        <!--AddPatientViewController-->
+        <!--Agregar-->
         <scene sceneID="goi-j7-aqV">
             <objects>
-                <viewController title="PatientViewController" id="bUe-JO-wIC" userLabel="AddPatientViewController" customClass="PacienteAgregarViewController" sceneMemberID="viewController">
+                <viewController title="AgregarPacienteVC" id="bUe-JO-wIC" userLabel="Agregar" customClass="PacienteAgregarViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ok7-5S-edy"/>
                         <viewControllerLayoutGuide type="bottom" id="vgn-LY-b8A"/>
@@ -262,18 +256,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oo8-HD-VrW">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="uG9-yM-Ltt"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.64127758489999998" green="1" blue="0.52655590910000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Agregar" id="dsQ-do-dn1"/>
                     <connections>
                         <outlet property="dpDob" destination="0SV-Lw-oaS" id="ufE-Ym-0H3"/>
-                        <outlet property="segSex" destination="y3v-Q7-4e5" id="QgH-zW-Mnt"/>
                         <outlet property="tfApellido" destination="4kQ-pT-hFI" id="L0d-2t-sso"/>
                         <outlet property="tfContrasena" destination="Exf-7C-dsj" id="0JQ-D5-c7m"/>
                         <outlet property="tfNombre" destination="X4C-gF-z1g" id="Nlo-O6-2nu"/>
@@ -305,7 +293,6 @@
                                 <items>
                                     <navigationItem title="Perfil" id="LA4-lk-Cse">
                                         <barButtonItem key="backBarButtonItem" title="Regresar" id="pRe-cM-WzM"/>
-                                        <barButtonItem key="leftBarButtonItem" title="Regresar" id="eR5-XF-4aO"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -403,7 +390,7 @@
                                 <rect key="frame" x="220" y="305" width="111" height="134"/>
                                 <state key="normal" title="Button" image="ofertas-icon.png"/>
                                 <connections>
-                                    <segue destination="faP-q2-oii" kind="presentation" id="06m-L8-ghP"/>
+                                    <segue destination="faP-q2-oii" kind="show" id="06m-L8-ghP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -434,19 +421,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ce3-Y4-28g">
-                                <rect key="frame" x="37" y="109" width="300" height="29"/>
+                                <rect key="frame" x="37" y="77" width="300" height="29"/>
                                 <segments>
                                     <segment title="Para mi"/>
                                     <segment title="Todos"/>
                                 </segments>
                                 <color key="tintColor" red="0.0" green="0.58132102269999997" blue="0.080542906210000001" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B43-Bf-jkh">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Ofertas" id="f6m-d3-p6Z"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.64127758489999998" green="1" blue="0.52655590910000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
