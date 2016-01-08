@@ -32,6 +32,10 @@
 		37A4F6D51C3FBF12003A9645 /* ofertasList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37A4F6D41C3FBF12003A9645 /* ofertasList.plist */; };
 		37A4F6D81C3FC25C003A9645 /* OfertaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6D71C3FC25C003A9645 /* OfertaDetailViewController.m */; };
 		37A4F6DB1C3FC9B1003A9645 /* OfertasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6DA1C3FC9B1003A9645 /* OfertasTableViewController.m */; };
+		37A4F7431C402CC4003A9645 /* Meds.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F73C1C402CC4003A9645 /* Meds.m */; };
+		37A4F7441C402CC4003A9645 /* MedsPacientesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F73E1C402CC4003A9645 /* MedsPacientesTableViewController.m */; };
+		37A4F7451C402CC4003A9645 /* PacienteMedsAgregarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F7401C402CC4003A9645 /* PacienteMedsAgregarViewController.m */; };
+		37A4F7461C402CC4003A9645 /* VerMedicinaPacienteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F7421C402CC4003A9645 /* VerMedicinaPacienteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +97,14 @@
 		37A4F6D71C3FC25C003A9645 /* OfertaDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfertaDetailViewController.m; sourceTree = "<group>"; };
 		37A4F6D91C3FC9B1003A9645 /* OfertasTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfertasTableViewController.h; sourceTree = "<group>"; };
 		37A4F6DA1C3FC9B1003A9645 /* OfertasTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfertasTableViewController.m; sourceTree = "<group>"; };
+		37A4F73B1C402CC4003A9645 /* Meds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meds.h; sourceTree = "<group>"; };
+		37A4F73C1C402CC4003A9645 /* Meds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meds.m; sourceTree = "<group>"; };
+		37A4F73D1C402CC4003A9645 /* MedsPacientesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedsPacientesTableViewController.h; sourceTree = "<group>"; };
+		37A4F73E1C402CC4003A9645 /* MedsPacientesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedsPacientesTableViewController.m; sourceTree = "<group>"; };
+		37A4F73F1C402CC4003A9645 /* PacienteMedsAgregarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacienteMedsAgregarViewController.h; sourceTree = "<group>"; };
+		37A4F7401C402CC4003A9645 /* PacienteMedsAgregarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacienteMedsAgregarViewController.m; sourceTree = "<group>"; };
+		37A4F7411C402CC4003A9645 /* VerMedicinaPacienteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerMedicinaPacienteViewController.h; sourceTree = "<group>"; };
+		37A4F7421C402CC4003A9645 /* VerMedicinaPacienteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerMedicinaPacienteViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +164,7 @@
 				37A4F6711C3EC26C003A9645 /* ViewController.h */,
 				37A4F6721C3EC26C003A9645 /* ViewController.m */,
 				37A4F6C41C3F7F59003A9645 /* Main.storyboard */,
+				37A4F7471C402CC9003A9645 /* Meds */,
 				37A4F6A91C3EE616003A9645 /* usuarios.plist */,
 				37A4F67A1C3EC26C003A9645 /* Assets.xcassets */,
 				37A4F67C1C3EC26C003A9645 /* LaunchScreen.storyboard */,
@@ -237,6 +250,21 @@
 				37A4F6D71C3FC25C003A9645 /* OfertaDetailViewController.m */,
 			);
 			name = Ofertas;
+			sourceTree = "<group>";
+		};
+		37A4F7471C402CC9003A9645 /* Meds */ = {
+			isa = PBXGroup;
+			children = (
+				37A4F73B1C402CC4003A9645 /* Meds.h */,
+				37A4F73C1C402CC4003A9645 /* Meds.m */,
+				37A4F73D1C402CC4003A9645 /* MedsPacientesTableViewController.h */,
+				37A4F73E1C402CC4003A9645 /* MedsPacientesTableViewController.m */,
+				37A4F73F1C402CC4003A9645 /* PacienteMedsAgregarViewController.h */,
+				37A4F7401C402CC4003A9645 /* PacienteMedsAgregarViewController.m */,
+				37A4F7411C402CC4003A9645 /* VerMedicinaPacienteViewController.h */,
+				37A4F7421C402CC4003A9645 /* VerMedicinaPacienteViewController.m */,
+			);
+			name = Meds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,16 +406,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37A4F7431C402CC4003A9645 /* Meds.m in Sources */,
 				37A4F6731C3EC26C003A9645 /* ViewController.m in Sources */,
 				37A4F6701C3EC26C003A9645 /* AppDelegate.m in Sources */,
 				37A4F6C31C3F62CF003A9645 /* Paciente.m in Sources */,
 				37A4F6BD1C3F3BF8003A9645 /* ListaPacientesTableViewController.m in Sources */,
+				37A4F7461C402CC4003A9645 /* VerMedicinaPacienteViewController.m in Sources */,
+				37A4F7441C402CC4003A9645 /* MedsPacientesTableViewController.m in Sources */,
 				37A4F6C01C3F4D00003A9645 /* PacienteAppsViewController.m in Sources */,
 				37A4F6DB1C3FC9B1003A9645 /* OfertasTableViewController.m in Sources */,
 				37A4F6C91C3F90A1003A9645 /* VerPacienteViewController.m in Sources */,
 				37A4F66D1C3EC26C003A9645 /* main.m in Sources */,
 				37A4F6B61C3F3197003A9645 /* PacienteAgregarViewController.m in Sources */,
 				37A4F6D01C3FBD09003A9645 /* CustomTableViewCell.m in Sources */,
+				37A4F7451C402CC4003A9645 /* PacienteMedsAgregarViewController.m in Sources */,
 				37A4F6D81C3FC25C003A9645 /* OfertaDetailViewController.m in Sources */,
 				37A4F6791C3EC26C003A9645 /* Medicheck.xcdatamodeld in Sources */,
 			);
