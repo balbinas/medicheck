@@ -50,13 +50,6 @@
     }
     else
         if ([[segue identifier] isEqualToString: @"agrega"]) [[segue destinationViewController] setDelegado:self];
-    
-    if ([[segue identifier] isEqualToString:@"showDetail"])
-    {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        Paciente *object = self.listaPacientes[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
-    }
 }
 
 #pragma mark - Table View
