@@ -14,7 +14,5 @@
 @property (strong, nonatomic) Paciente *detailItem;
 
 @property (weak, nonatomic) IBOutlet UILabel *lbNombre;
-@property (weak, nonatomic) IBOutlet UILabel *lbOficina;
-@property (weak, nonatomic) IBOutlet UILabel *lbTelefono;
 
 @end

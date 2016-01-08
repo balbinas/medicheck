@@ -8,6 +8,7 @@
 
 #import "ListaPacientesTableViewController.h"
 #import "PacienteAppsViewController.h"
+#import "VerPacienteViewController.h"
 #import "Paciente.h"
 
 @interface ListaPacientesTableViewController ()
@@ -27,9 +28,9 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    Paciente *pac1 = [[Paciente alloc]	initWithNombre:@"Luis Jorge" apellido:@"Gutierrez Valadares" telefono:55341233 usuario:@"alberto" contrasena:@"1234" dob:@"Jan 7,1945"];
-    Paciente *pac2 = [[Paciente alloc]	initWithNombre:@"Luis Alberto" apellido:@"Remes Quiroz" telefono:55341233 usuario:@"jorge" contrasena:@"1234" dob:@"Jan 7,1942" ];
-    Paciente *pac3 = [[Paciente alloc]	initWithNombre:@"Alejandra" apellido:@"Granada Torres" telefono:55341233 usuario:@"alejandra" contrasena:@"1234" dob:@"Jan 7,1950"];
+    Paciente *pac1 = [[Paciente alloc]	initWithNombre:@"Luis Jorge" apellido:@"Gutierrez Valadares" telefono:55341233 usuario:@"alberto" contrasena:@"1234"];
+    Paciente *pac2 = [[Paciente alloc]	initWithNombre:@"Luis Alberto" apellido:@"Remes Quiroz" telefono:55341233 usuario:@"jorge" contrasena:@"1234"];
+    Paciente *pac3 = [[Paciente alloc]	initWithNombre:@"Alejandra" apellido:@"Granada Torres" telefono:55341233 usuario:@"alejandra" contrasena:@"1234"];
     self.listaPacientes	= [[NSMutableArray alloc]	initWithObjects: pac1,	pac2, pac3,	nil];
 }
 
@@ -41,7 +42,7 @@
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"showDetail"])
+    if ([[segue identifier] isEqualToString:@"showApp"])
     {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         Paciente *object = self.listaPacientes[indexPath.row];
@@ -69,11 +70,11 @@
     return cell;
 }
 
-#pragma mark - Métodos de Protocolo Agregar Contacto
+#pragma mark - Métodos de Protocolo Agregar Paciente
 
-- (void) agregaPaciente:(NSString *)nombre withApellido:(NSString *)apel withTelefono:(NSInteger)tel withUsuario:(NSString *)user withContrasena:(NSString *)pssw withDob:(NSDate *)dob
+- (void) agregaPaciente:(NSString *)nombre withApellido:(NSString *)apel withTelefono:(NSInteger)tel withUsuario:(NSString *)user withContrasena:(NSString *)pssw
 {
-    Paciente *tmp = [[Paciente alloc] initWithNombre:nombre apellido:apel telefono:tel usuario:user contrasena:pssw dob:dob];
+    Paciente *tmp = [[Paciente alloc] initWithNombre:nombre apellido:apel telefono:tel usuario:user contrasena:pssw ];
     [self.listaPacientes addObject: tmp];
     [self.tableView reloadData];
 }
