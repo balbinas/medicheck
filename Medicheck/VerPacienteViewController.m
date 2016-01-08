@@ -1,18 +1,18 @@
 //
-//  PacienteAppsViewController.m
+//  VerPacienteViewController.m
 //  Medicheck
 //
-//  Created by Balbina Santana on 1/7/16.
+//  Created by Balbina Santana on 1/8/16.
 //  Copyright © 2016 Balbina Santana. All rights reserved.
 //
 
-#import "PacienteAppsViewController.h"
+#import "VerPacienteViewController.h"
 
-@interface PacienteAppsViewController ()
+@interface VerPacienteViewController ()
 
 @end
 
-@implementation PacienteAppsViewController
+@implementation VerPacienteViewController
 
 #pragma mark - Managing the detail item
 
@@ -29,13 +29,16 @@
     // Update the user interface for the detail item.
     if (self.detailItem) {
         self.lbNombre.text = [self.detailItem nombre];
+        self.lbApellido.text = [self.detailItem apellido];
+        self.lbTelefono.text = [NSString stringWithFormat:@"%ld", (long)[self.detailItem telefono]];
+        self.lbUser.text = [self.detailItem usuario];
+//        self.lbFecha.text = [self.detailItem dob];
     }
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self configureView];
 }
 
 - (void)didReceiveMemoryWarning {

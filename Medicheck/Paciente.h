@@ -15,9 +15,9 @@
 @property NSInteger telefono;
 @property(nonatomic,strong) NSString *usuario;
 @property(nonatomic,strong) NSString *contrasena;
-@property NSDate *dob;
+//@property NSDate *dob;
 //@property (nonatomic, strong) NSString *sexo;
 
-- (id) initWithNombre:(NSString*)nom apellido: (NSString*) apel telefono: (NSInteger) tel usuario: (NSString*) user contrasena: (NSString*) pssw dob: (NSDate*) dob;
+- (id) initWithNombre:(NSString*)nom apellido: (NSString*) apel telefono: (NSInteger) tel usuario: (NSString*) user contrasena: (NSString*) pssw;
 
 @end

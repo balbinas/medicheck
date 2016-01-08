@@ -26,6 +26,7 @@
 		37A4F6C01C3F4D00003A9645 /* PacienteAppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6BF1C3F4D00003A9645 /* PacienteAppsViewController.m */; };
 		37A4F6C31C3F62CF003A9645 /* Paciente.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6C21C3F62CF003A9645 /* Paciente.m */; };
 		37A4F6C61C3F7F59003A9645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A4F6C41C3F7F59003A9645 /* Main.storyboard */; };
+		37A4F6C91C3F90A1003A9645 /* VerPacienteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6C81C3F90A1003A9645 /* VerPacienteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		37A4F6C11C3F62CF003A9645 /* Paciente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paciente.h; sourceTree = "<group>"; };
 		37A4F6C21C3F62CF003A9645 /* Paciente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Paciente.m; sourceTree = "<group>"; };
 		37A4F6C51C3F7F59003A9645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		37A4F6C71C3F90A1003A9645 /* VerPacienteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerPacienteViewController.h; sourceTree = "<group>"; };
+		37A4F6C81C3F90A1003A9645 /* VerPacienteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerPacienteViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +204,8 @@
 				37A4F6B51C3F3197003A9645 /* PacienteAgregarViewController.m */,
 				37A4F6BE1C3F4D00003A9645 /* PacienteAppsViewController.h */,
 				37A4F6BF1C3F4D00003A9645 /* PacienteAppsViewController.m */,
+				37A4F6C71C3F90A1003A9645 /* VerPacienteViewController.h */,
+				37A4F6C81C3F90A1003A9645 /* VerPacienteViewController.m */,
 			);
 			name = Paciente;
 			sourceTree = "<group>";
@@ -347,6 +352,7 @@
 				37A4F6C31C3F62CF003A9645 /* Paciente.m in Sources */,
 				37A4F6BD1C3F3BF8003A9645 /* ListaPacientesTableViewController.m in Sources */,
 				37A4F6C01C3F4D00003A9645 /* PacienteAppsViewController.m in Sources */,
+				37A4F6C91C3F90A1003A9645 /* VerPacienteViewController.m in Sources */,
 				37A4F66D1C3EC26C003A9645 /* main.m in Sources */,
 				37A4F6B61C3F3197003A9645 /* PacienteAgregarViewController.m in Sources */,
 				37A4F6791C3EC26C003A9645 /* Medicheck.xcdatamodeld in Sources */,

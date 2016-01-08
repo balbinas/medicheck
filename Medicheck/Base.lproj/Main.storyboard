@@ -121,7 +121,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <connections>
-                                    <segue destination="TXH-Ci-Us2" kind="show" id="2lc-On-SvH"/>
+                                    <segue destination="TXH-Ci-Us2" kind="show" identifier="showApp" id="2lc-On-SvH"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -261,7 +261,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Agregar" id="dsQ-do-dn1"/>
                     <connections>
-                        <outlet property="dpDob" destination="0SV-Lw-oaS" id="ufE-Ym-0H3"/>
+                        <outlet property="dpDob" destination="0SV-Lw-oaS" id="MKJ-o8-vVT"/>
                         <outlet property="tfApellido" destination="4kQ-pT-hFI" id="L0d-2t-sso"/>
                         <outlet property="tfContrasena" destination="Exf-7C-dsj" id="0JQ-D5-c7m"/>
                         <outlet property="tfNombre" destination="X4C-gF-z1g" id="Nlo-O6-2nu"/>
@@ -273,10 +273,10 @@
             </objects>
             <point key="canvasLocation" x="1948.5" y="-17.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Ver Paciente View Controller-->
         <scene sceneID="iun-Dk-5SQ">
             <objects>
-                <viewController id="fAH-BM-gS4" sceneMemberID="viewController">
+                <viewController id="fAH-BM-gS4" customClass="VerPacienteViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FsX-ZG-gYO"/>
                         <viewControllerLayoutGuide type="bottom" id="L6X-Xd-tMq"/>
@@ -285,9 +285,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abuelo1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RLZ-Lc-vUm">
-                                <rect key="frame" x="0.0" y="64" width="375" height="215"/>
-                            </imageView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7dx-e3-b1X">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
@@ -311,20 +308,14 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sexo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJp-Ue-D0x">
-                                        <rect key="frame" x="54" y="147" width="106" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha de nacimiento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJp-Ue-D0x">
+                                        <rect key="frame" x="50" y="147" width="148" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sexo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3Q-em-aUQ">
-                                        <rect key="frame" x="189" y="147" width="106" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tel de emergencia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihu-XY-k3W">
-                                        <rect key="frame" x="189" y="110" width="150" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3Q-em-aUQ">
+                                        <rect key="frame" x="206" y="147" width="106" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -335,14 +326,20 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tel de emergencia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihu-XY-k3W">
+                                        <rect key="frame" x="206" y="110" width="150" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apellido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEO-6G-agR">
-                                        <rect key="frame" x="212" y="20" width="143" height="21"/>
+                                        <rect key="frame" x="206" y="20" width="143" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psl-HF-391">
-                                        <rect key="frame" x="205" y="67" width="107" height="21"/>
+                                        <rect key="frame" x="206" y="67" width="107" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -350,9 +347,18 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abuelo1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RLZ-Lc-vUm">
+                                <rect key="frame" x="0.0" y="85" width="375" height="215"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.64127758489999998" green="1" blue="0.52655590910000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="lbApellido" destination="VEO-6G-agR" id="D4q-2y-W9d"/>
+                        <outlet property="lbNombre" destination="C8w-Fm-NvQ" id="dxo-kC-AbW"/>
+                        <outlet property="lbTelefono" destination="ihu-XY-k3W" id="k2p-4p-jxc"/>
+                        <outlet property="lbUser" destination="Psl-HF-391" id="O1z-xe-huq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yUC-cq-B79" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -402,10 +408,13 @@
                     <navigationItem key="navigationItem" title="Paciente" id="6Rz-ho-70L">
                         <barButtonItem key="rightBarButtonItem" title="👴🏼" id="4E8-dD-LMt">
                             <connections>
-                                <segue destination="fAH-BM-gS4" kind="show" id="RhD-87-EYP"/>
+                                <segue destination="fAH-BM-gS4" kind="show" identifier="showDetail" id="RhD-87-EYP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="lbNombre" destination="ZoK-lg-z3g" id="Dgw-zJ-d48"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZl-yd-bzf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -497,7 +506,7 @@
         <!--Navigation Controller-->
         <scene sceneID="kZn-ea-K1w">
             <objects>
-                <navigationController id="w7s-zc-GqZ" sceneMemberID="viewController">
+                <navigationController hidesBottomBarWhenPushed="YES" id="w7s-zc-GqZ" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="hpo-46-Ia3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZcF-Tv-gd1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
