@@ -10,7 +10,7 @@
 
 @protocol ProtocoloAgregarPaciente <NSObject>
 
-- (void) agregaPaciente: (NSString *)nombre withApellido:(NSString *) apel withTelefono: (NSInteger) tel withUsuario: (NSString*) user withContrasena: (NSString*) passw withSexo: (NSString*) sex withDob: (NSDate*) dob;
+- (void) agregaPaciente: (NSString *)nombre withApellido:(NSString *) apel withTelefono: (NSInteger) tel withUsuario: (NSString*) user withContrasena: (NSString*) passw withDob: (NSDate*) dob;
 - (void) quitaVista;
 
 @end
@@ -23,7 +23,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *tfUsuario;
 @property (weak, nonatomic) IBOutlet UITextField *tfContrasena;
 @property (weak, nonatomic) IBOutlet UITextField *tfTelefono;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *segSex;
+//@property (weak, nonatomic) IBOutlet UISegmentedControl *segSex;
 @property (weak, nonatomic) IBOutlet UIDatePicker *dpDob;
 
 @property(nonatomic, strong) id <ProtocoloAgregarPaciente> delegado;

@@ -7,8 +7,12 @@
 //
 
 #import "ListaPacientesTableViewController.h"
+#import "PacienteAppsViewController.h"
+#import "Paciente.h"
 
 @interface ListaPacientesTableViewController ()
+
+@property NSMutableArray *listaPacientes;
 
 @end
 
@@ -22,6 +26,11 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    Paciente *pac1 = [[Paciente alloc]	initWithNombre:@"Luis Jorge" apellido:@"Gutierrez Valadares" usuario:@"alberto" contrasena:@"1234" sexo:@"Hombre" dob:@"Jan 7,1945" telefono:55341233];
+    Paciente *pac2 = [[Paciente alloc]	initWithNombre:@"Luis Alberto" apellido:@"Remes Quiroz" usuario:@"jorge" contrasena:@"1234" sexo:@"Hombre" dob:@"Jan 7,1942" telefono:55341233];
+    Paciente *pac3 = [[Paciente alloc]	initWithNombre:@"Alejandra" apellido:@"Granada Torres" usuario:@"alejandra" contrasena:@"1234" sexo:@"Mujer" dob:@"Jan 7,1950" telefono:55341233];
+    self.listaPacientes	= [[NSMutableArray alloc]	initWithObjects: cont1,	cont2, cont3	nil];
 }
 
 - (void)didReceiveMemoryWarning {

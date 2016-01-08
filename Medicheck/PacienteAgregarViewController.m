@@ -41,11 +41,11 @@
         NSString *apel = self.tfApellido.text;
         NSString *user = self.tfUsuario.text;
         NSString *pssw = self.tfContrasena.text;
-        NSString *sex = self.segSex.segmentedControlStyle;
+//        NSString *sex = self.segSex.seg;
         NSInteger tel = [self.tfTelefono.text integerValue];
         
         
-        [self.delegado agregaPaciente: withApellido: apel withTelefono: withUsuario: withContrasena: withSexo: withDob: withTelefono:tel];
+        [self.delegado agregaPaciente: withApellido: apel withTelefono: withUsuario: withContrasena: withDob: withTelefono:tel];
         
         [self.delegado quitaVista];
     }

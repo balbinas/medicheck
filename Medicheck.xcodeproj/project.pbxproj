@@ -25,6 +25,7 @@
 		37A4F6B21C3F285B003A9645 /* Paciente.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6B11C3F285B003A9645 /* Paciente.m */; };
 		37A4F6B61C3F3197003A9645 /* PacienteAgregarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6B51C3F3197003A9645 /* PacienteAgregarViewController.m */; };
 		37A4F6BD1C3F3BF8003A9645 /* ListaPacientesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6BC1C3F3BF8003A9645 /* ListaPacientesTableViewController.m */; };
+		37A4F6C01C3F4D00003A9645 /* PacienteAppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6BF1C3F4D00003A9645 /* PacienteAppsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		37A4F6B51C3F3197003A9645 /* PacienteAgregarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacienteAgregarViewController.m; sourceTree = "<group>"; };
 		37A4F6BB1C3F3BF8003A9645 /* ListaPacientesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListaPacientesTableViewController.h; path = ../ListaPacientesTableViewController.h; sourceTree = "<group>"; };
 		37A4F6BC1C3F3BF8003A9645 /* ListaPacientesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListaPacientesTableViewController.m; path = ../ListaPacientesTableViewController.m; sourceTree = "<group>"; };
+		37A4F6BE1C3F4D00003A9645 /* PacienteAppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacienteAppsViewController.h; sourceTree = "<group>"; };
+		37A4F6BF1C3F4D00003A9645 /* PacienteAppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacienteAppsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				37A4F6A61C3ED291003A9645 /* Login */,
-				37A4F6B71C3F3936003A9645 /* Agregar Paciente */,
+				37A4F6B71C3F3936003A9645 /* Paciente */,
 				37A4F6A11C3EC92E003A9645 /* Images */,
 				37A4F66E1C3EC26C003A9645 /* AppDelegate.h */,
 				37A4F66F1C3EC26C003A9645 /* AppDelegate.m */,
@@ -183,21 +186,23 @@
 		37A4F6A61C3ED291003A9645 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				37A4F6B11C3F285B003A9645 /* Paciente.m */,
-				37A4F6B31C3F2871003A9645 /* Paciente.h */,
 			);
 			name = Login;
 			sourceTree = "<group>";
 		};
-		37A4F6B71C3F3936003A9645 /* Agregar Paciente */ = {
+		37A4F6B71C3F3936003A9645 /* Paciente */ = {
 			isa = PBXGroup;
 			children = (
+				37A4F6B11C3F285B003A9645 /* Paciente.m */,
+				37A4F6B31C3F2871003A9645 /* Paciente.h */,
 				37A4F6BB1C3F3BF8003A9645 /* ListaPacientesTableViewController.h */,
 				37A4F6BC1C3F3BF8003A9645 /* ListaPacientesTableViewController.m */,
 				37A4F6B41C3F3197003A9645 /* PacienteAgregarViewController.h */,
 				37A4F6B51C3F3197003A9645 /* PacienteAgregarViewController.m */,
+				37A4F6BE1C3F4D00003A9645 /* PacienteAppsViewController.h */,
+				37A4F6BF1C3F4D00003A9645 /* PacienteAppsViewController.m */,
 			);
-			name = "Agregar Paciente";
+			name = Paciente;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +345,7 @@
 				37A4F6731C3EC26C003A9645 /* ViewController.m in Sources */,
 				37A4F6701C3EC26C003A9645 /* AppDelegate.m in Sources */,
 				37A4F6BD1C3F3BF8003A9645 /* ListaPacientesTableViewController.m in Sources */,
+				37A4F6C01C3F4D00003A9645 /* PacienteAppsViewController.m in Sources */,
 				37A4F66D1C3EC26C003A9645 /* main.m in Sources */,
 				37A4F6B61C3F3197003A9645 /* PacienteAgregarViewController.m in Sources */,
 				37A4F6791C3EC26C003A9645 /* Medicheck.xcdatamodeld in Sources */,

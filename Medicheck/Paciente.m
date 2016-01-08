@@ -10,7 +10,7 @@
 
 @implementation Paciente
 
-- (id) initWithNombre: (NSString*) nom apellido: (NSString*) apel telefono: (NSInteger) tel usuario: (NSString*) user contrasena: (NSString*) pssw dob: (NSDate*) dob sexo: (NSString*) sex
+- (id) initWithNombre: (NSString*) nom apellido: (NSString*) apel telefono: (NSInteger) tel usuario: (NSString*) user contrasena: (NSString*) pssw dob: (NSDate*) dob
 {   self	=	[super	init];
     if	(self)
 			 {   _nombre        =	nom;
@@ -19,7 +19,7 @@
                  _contrasena    =   pssw;
                  _telefono      =	tel;
                  _dob           =   dob;
-                 _sexo          =   sex;
+//                 _sexo          =   sex;
                  
              }
     return	self;
