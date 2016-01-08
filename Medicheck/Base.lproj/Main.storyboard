@@ -140,7 +140,7 @@
                     <navigationItem key="navigationItem" title="Pacientes" id="2YQ-sZ-bhS" userLabel="Todos los pacientes">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Z3K-TW-sDH">
                             <connections>
-                                <segue destination="bUe-JO-wIC" kind="show" id="D92-mP-D2Y"/>
+                                <segue destination="bUe-JO-wIC" kind="show" identifier="agrega" id="D92-mP-D2Y"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -153,7 +153,7 @@
         <!--AddPatientViewController-->
         <scene sceneID="goi-j7-aqV">
             <objects>
-                <viewController title="PatientViewController" id="bUe-JO-wIC" userLabel="AddPatientViewController" sceneMemberID="viewController">
+                <viewController title="PatientViewController" id="bUe-JO-wIC" userLabel="AddPatientViewController" customClass="PacienteAgregarViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ok7-5S-edy"/>
                         <viewControllerLayoutGuide type="bottom" id="vgn-LY-b8A"/>
@@ -223,6 +223,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <state key="normal" title="Agregar paciente"/>
+                                        <connections>
+                                            <action selector="btAgregar:" destination="bUe-JO-wIC" eventType="touchUpInside" id="E3G-da-eYC"/>
+                                        </connections>
                                     </button>
                                     <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0SV-Lw-oaS">
                                         <rect key="frame" x="0.0" y="348" width="300" height="116"/>
@@ -268,6 +271,15 @@
                         </subviews>
                         <color key="backgroundColor" red="0.64127758489999998" green="1" blue="0.52655590910000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="dpDob" destination="0SV-Lw-oaS" id="ufE-Ym-0H3"/>
+                        <outlet property="segSex" destination="y3v-Q7-4e5" id="QgH-zW-Mnt"/>
+                        <outlet property="tfApellido" destination="4kQ-pT-hFI" id="L0d-2t-sso"/>
+                        <outlet property="tfContrasena" destination="Exf-7C-dsj" id="0JQ-D5-c7m"/>
+                        <outlet property="tfNombre" destination="X4C-gF-z1g" id="Nlo-O6-2nu"/>
+                        <outlet property="tfTelefono" destination="dPx-RX-blY" id="hh4-gx-QWi"/>
+                        <outlet property="tfUsuario" destination="S57-Wm-H1r" id="1yg-Sb-AOf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t5Q-3Z-nrZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -337,6 +349,12 @@
                                 </segments>
                                 <color key="tintColor" red="0.0" green="0.58132102269999997" blue="0.080542906210000001" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B43-Bf-jkh">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Ofertas" id="f6m-d3-p6Z"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.64127758489999998" green="1" blue="0.52655590910000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -344,7 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GsO-lO-eTm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2493.5" y="337.5"/>
+            <point key="canvasLocation" x="2383.5" y="695.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kZn-ea-K1w">
