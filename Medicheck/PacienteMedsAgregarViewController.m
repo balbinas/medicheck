@@ -42,9 +42,12 @@
         NSString *dosi = self.tfDosis.text;
         NSString *comp = self.tfCompuesto.text;
         NSString *uni = self.tfUnidades.text;
+        NSInteger peri = (long)self.tfPeriodo.text;
+        NSDate * horaIni = self.dpStartTime;
+        
        
         
-        [self.delegado agregaMedicamento:nom withCompuesto:comp withDosis:dosi withUnidades:uni];
+        [self.delegado agregaMedicamento:(NSString *)nom withDosage:(NSInteger)dosi withComponente:(NSString *)comp withUnidades:(NSString *)uni withPeriodo:(NSInteger)peri withStartTime:(NSDate *)horaIni];
         
         [self.delegado quitaVista];
     }

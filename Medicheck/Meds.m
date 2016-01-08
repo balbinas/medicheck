@@ -10,6 +10,22 @@
 
 @implementation Meds
 
+- (id) initWithNombre: (NSString*) nom dosage: (NSInteger*) dose componente: (NSString *) comp measure: (NSString*) meas period: (NSInteger) peri horaInicio: (NSDate *) horaIni
+{   self	=	[super	init];
+    if	(self)
+			 {   _nombre        =	nom;
+                 _dosage      	=	(int)dose;
+                 _componente    =   comp;
+                 _measure	    =   meas;
+                 _period        =   peri;
+                 _horaInicio    =   horaIni;
+                 
+             }
+    return	self;
+    
+}
+
+
 - (id) initWithNombre: (NSString*) nom dosage: (NSInteger*) dose componente: (NSString *) comp measure: (NSString*) meas
 {   self	=	[super	init];
     if	(self)
@@ -17,7 +33,7 @@
                  _dosage      	=	(int)dose;
                  _componente    =   comp;
                  _measure	    =   meas;
-                 //                 _sexo          =   sex;
+                 
                  
              }
     return	self;

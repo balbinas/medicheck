@@ -10,14 +10,7 @@
 
 @protocol ProtocoloAgregarMedicamento <NSObject>
 
--(void) agregaMedicamento: (NSString *)nombre withDosis:(NSInteger) dos withUnidades:(NSString *) uni withPeriodo:(NSInteger) per withStartTime:(NSDate *) strtTime withStartDate:(NSDate *) strtDate withEndDate:(NSInteger) endDate;
-
--(void) agregaMedicamento: (NSString *)nombre withCompuesto:(NSString *) comp withDosis:(NSInteger)dos withUnidades:(NSString *) uni withPeriodo:(NSInteger) per withStartTime:(NSDate *) strtTime withStartDate:(NSDate *) strtDate withEndDate:(NSInteger) endDate;
-
-
--(void) agregaMedicamento: (NSString *)nombre withCompuesto:(NSString *) comp withDosis:(NSInteger)dos withUnidades:(NSString *) uni;
-
-
+- (void) agregaMedicamento:(NSString *)nom withDosage:(NSInteger)dosi withComponente:(NSString *)comp withUnidades:(NSString *)uni withPeriodo:(NSInteger)peri withStartTime:(NSDate *)horaIni;
 
 -(void) quitaVista;
 

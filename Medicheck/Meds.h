@@ -14,8 +14,10 @@
 @property NSInteger dosage;
 @property(nonatomic,strong) NSString *componente;
 @property(nonatomic,strong) NSString *measure;
+@property NSInteger period;
+@property(nonatomic,strong) NSDate * horaInicio;
 
-//@property (nonatomic, strong) NSString *sexo;
+- (id) initWithNombre: (NSString*) nom dosage: (NSInteger*) dose componente: (NSString *) comp measure: (NSString*) meas period: (NSInteger) peri horaInicio: (NSDate *) horaIni;
 
-- (id) initWithNombre: (NSString*) nom dosage: (NSInteger*) dose componente: (NSString*) comp measure: (NSString*) meas;
+- (id) initWithNombre:(NSString*) nom dosage: (NSInteger*) dose componente: (NSString *) comp measure: (NSString*) meas;
 @end

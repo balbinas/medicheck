@@ -30,6 +30,7 @@
     // Update the user interface for the detail item.
     if (self.detailItem) {
         [self setTitle:[self.detailItem nombre]];
+        
         self.tfDosis.text = [NSString stringWithFormat:@"%ld%@",(long)[self.detailItem dosage],[self.detailItem measure]];
         //self.tfFechaInicio.text = [self.detailItem measure];
         //self.lbTelefono.text = [NSString stringWithFormat:@"%ld", (long)[self.detailItem telefono]];

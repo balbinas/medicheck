@@ -27,9 +27,19 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    Meds *med1 =  [[Meds alloc] initWithNombre:@"Remeron" dosage:30 componente:@"Mirtazopina" measure:@"ml"];
-    Meds *med2 =  [[Meds alloc] initWithNombre:@"Haldol" dosage:120 componente:@"Haloperidol" measure:@"ml"];
-    Meds *med3 =  [[Meds alloc] initWithNombre:@"Vasotec" dosage:20 componente:@"Enalapril" measure:@"ml"];
+    NSDateFormatter *timeFormat = [[NSDateFormatter alloc] init];
+    [timeFormat setDateFormat:@"HH:mm:ss"];
+    NSDate *theTime1 = [timeFormat dateFromString:@"20:30:00"];
+    NSDate *theTime2 = [timeFormat dateFromString:@"22:30:00"];
+    NSDate *theTime3 = [timeFormat dateFromString:@"18:30:00"];
+    
+    
+    
+    
+    Meds *med1 =  [[Meds alloc] initWithNombre:@"Remeron" dosage:(long)30 componente:@"Mirtazopina" measure:@"ml" period:12 horaInicio:theTime1];
+    Meds *med2 =  [[Meds alloc] initWithNombre:@"Haldol" dosage:(long)120 componente:@"Haloperidol" measure:@"ml" period:10 horaInicio:theTime2 ];
+    Meds *med3 =  [[Meds alloc] initWithNombre:@"Vasotec" dosage:(long)20 componente:@"Enalapril" measure:@"ml" period:8 horaInicio:theTime3 ];
+    
     
     self.listaMedicinas = [[NSMutableArray alloc] initWithObjects:med1, med2, med3, nil];
 }
@@ -67,14 +77,17 @@
     
     Meds *object = self.listaMedicinas[indexPath.row];
     cell.textLabel.text = [object nombre];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%ld%@",(long)[object dosage],[object measure]];
     return cell;
 }
 
 #pragma mark - Métodos de Protocolo Agregar Paciente
 
-- (void) agregaMedicamento:(NSString *)nombre withCompuesto:(NSString *)comp withDosis:(NSInteger)dos withUnidades:(NSString *)uni
+- (void) agregaMedicamento:(NSString *)nom withDosage:(NSInteger)dosi withComponente:(NSString *)comp withUnidades:(NSString *)uni withPeriodo:(NSInteger)peri withStartTime:(NSDate *)horaIni
+
+//nom withCompuesto:comp withDosis:dosi withUnidades:uni withPeriodo:peri withStartTime:horaIni
 {
-    Meds *tmp = [[Meds alloc] initWithNombre:nombre dosage:&dos componente:comp measure:uni];
+    Meds *tmp = [[Meds alloc] initWithNombre:nom dosage:(long)dosi componente:comp measure:uni period:peri horaInicio:horaIni];
     NSLog(@"Agrego A Arreglo");
     [self.listaMedicinas addObject:tmp];
     [self.tableView reloadData];
