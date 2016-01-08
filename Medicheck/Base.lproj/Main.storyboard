@@ -34,9 +34,6 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                         <state key="normal" title="Iniciar sesión"/>
-                                                        <connections>
-                                                            <segue destination="UR1-OK-j8y" kind="show" id="z8N-eF-xm8"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.0" green="0.58132102269999997" blue="0.080542906210000001" alpha="1" colorSpace="calibratedRGB"/>
