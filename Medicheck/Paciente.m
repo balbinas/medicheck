@@ -19,7 +19,7 @@
                  _contrasena    =   pssw;
                  _telefono      =	tel;
                  _dob           =   dob;
-//                 _sexo          =   sex;
+                 //                 _sexo          =   sex;
                  
              }
     return	self;

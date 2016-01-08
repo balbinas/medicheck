@@ -43,9 +43,10 @@
         NSString *pssw = self.tfContrasena.text;
 //        NSString *sex = self.segSex.seg;
         NSInteger tel = [self.tfTelefono.text integerValue];
+        NSDate *dob = self.dpDob.date;
         
         
-        [self.delegado agregaPaciente: withApellido: apel withTelefono: withUsuario: withContrasena: withDob: withTelefono:tel];
+        [self.delegado agregaPaciente:nom withApellido: apel withTelefono: tel withUsuario: user withContrasena: pssw withDob: dob];
         
         [self.delegado quitaVista];
     }

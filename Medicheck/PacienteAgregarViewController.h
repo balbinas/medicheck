@@ -10,7 +10,7 @@
 
 @protocol ProtocoloAgregarPaciente <NSObject>
 
-- (void) agregaPaciente: (NSString *)nombre withApellido:(NSString *) apel withTelefono: (NSInteger) tel withUsuario: (NSString*) user withContrasena: (NSString*) passw withDob: (NSDate*) dob;
+- (void) agregaPaciente: (NSString *)nombre withApellido:(NSString *) apel withTelefono: (NSInteger) tel withUsuario: (NSString*) user withContrasena: (NSString*) pssw withDob: (NSDate*) dob;
 - (void) quitaVista;
 
 @end

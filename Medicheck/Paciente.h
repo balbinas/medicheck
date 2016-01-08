@@ -12,9 +12,9 @@
 
 @property(nonatomic,strong) NSString *nombre;
 @property(nonatomic,strong) NSString *apellido;
+@property NSInteger telefono;
 @property(nonatomic,strong) NSString *usuario;
 @property(nonatomic,strong) NSString *contrasena;
-@property NSInteger telefono;
 @property NSDate *dob;
 //@property (nonatomic, strong) NSString *sexo;
 

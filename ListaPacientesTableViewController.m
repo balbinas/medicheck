@@ -27,10 +27,10 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    Paciente *pac1 = [[Paciente alloc]	initWithNombre:@"Luis Jorge" apellido:@"Gutierrez Valadares" usuario:@"alberto" contrasena:@"1234" sexo:@"Hombre" dob:@"Jan 7,1945" telefono:55341233];
-    Paciente *pac2 = [[Paciente alloc]	initWithNombre:@"Luis Alberto" apellido:@"Remes Quiroz" usuario:@"jorge" contrasena:@"1234" sexo:@"Hombre" dob:@"Jan 7,1942" telefono:55341233];
-    Paciente *pac3 = [[Paciente alloc]	initWithNombre:@"Alejandra" apellido:@"Granada Torres" usuario:@"alejandra" contrasena:@"1234" sexo:@"Mujer" dob:@"Jan 7,1950" telefono:55341233];
-    self.listaPacientes	= [[NSMutableArray alloc]	initWithObjects: cont1,	cont2, cont3	nil];
+    Paciente *pac1 = [[Paciente alloc]	initWithNombre:@"Luis Jorge" apellido:@"Gutierrez Valadares" telefono:55341233 usuario:@"alberto" contrasena:@"1234" dob:@"Jan 7,1945"];
+    Paciente *pac2 = [[Paciente alloc]	initWithNombre:@"Luis Alberto" apellido:@"Remes Quiroz" telefono:55341233 usuario:@"jorge" contrasena:@"1234" dob:@"Jan 7,1942" ];
+    Paciente *pac3 = [[Paciente alloc]	initWithNombre:@"Alejandra" apellido:@"Granada Torres" telefono:55341233 usuario:@"alejandra" contrasena:@"1234" dob:@"Jan 7,1950"];
+    self.listaPacientes	= [[NSMutableArray alloc]	initWithObjects: pac1,	pac2, pac3,	nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,16 +38,49 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+#pragma mark - Segues
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"showDetail"])
+    {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Paciente *object = self.listaPacientes[indexPath.row];
+        [[segue destinationViewController] setDetailItem:object];
+    }
+    else
+        if ([[segue identifier] isEqualToString: @"agrega"]) [[segue destinationViewController] setDelegado:self];
+}
+
+#pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return self.listaPacientes.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    Paciente *object = self.listaPacientes[indexPath.row];
+    cell.textLabel.text = [object nombre];
+    return cell;
+}
+
+#pragma mark - Métodos de Protocolo Agregar Contacto
+
+- (void) agregaPaciente:(NSString *)nombre withApellido:(NSString *)apel withTelefono:(NSInteger)tel withUsuario:(NSString *)user withContrasena:(NSString *)pssw withDob:(NSDate *)dob
+{
+    Paciente *tmp = [[Paciente alloc] initWithNombre:nombre apellido:apel telefono:tel usuario:user contrasena:pssw dob:dob];
+    [self.listaPacientes addObject: tmp];
+    [self.tableView reloadData];
+}
+
+- (void) quitaVista
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 /*
