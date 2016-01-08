@@ -8,9 +8,15 @@
 		<key>Apellido</key>
 		<string>Gutiérrez Valladares</string>
 		<key>Fecha de nacimiento</key>
-		<string>29/03/1945</string>
+		<date>1945-01-07T23:22:10Z</date>
 		<key>Sexo</key>
-		<string>Masculino</string>
+		<string>Hombre</string>
+		<key>Telefono de emergencia</key>
+		<integer>55123423421</integer>
+		<key>Usuario</key>
+		<string>alberto</string>
+		<key>Contraseña</key>
+		<string>1234</string>
 	</dict>
 	<dict>
 		<key>Nombre</key>
@@ -18,9 +24,15 @@
 		<key>Apellido</key>
 		<string>Remes Quiroz</string>
 		<key>Fecha de nacimiento</key>
-		<string>11/02/1949</string>
+		<date>1942-01-07T23:22:31Z</date>
 		<key>Sexo</key>
-		<string>Masculino</string>
+		<string>Hombre</string>
+		<key>Telefono de emergencia</key>
+		<integer>551231231</integer>
+		<key>Usuario</key>
+		<string>jorge</string>
+		<key>Contraseña</key>
+		<string>1234</string>
 	</dict>
 	<dict>
 		<key>Nombre</key>
@@ -28,9 +40,15 @@
 		<key>Apellido</key>
 		<string>Granada Torres</string>
 		<key>Fecha de nacimiento</key>
-		<string>04/03/1946</string>
+		<date>1950-01-07T23:22:24Z</date>
 		<key>Sexo</key>
-		<string>Femenino</string>
+		<string>Mujer</string>
+		<key>Telefono de emergencia</key>
+		<integer>55123124325</integer>
+		<key>Usuario</key>
+		<string>alejandra</string>
+		<key>Contraseña</key>
+		<string>1234</string>
 	</dict>
 </array>
 </plist>
