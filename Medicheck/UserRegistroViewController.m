@@ -1,18 +1,18 @@
 //
-//  PacienteMedsAgregarViewController.m
+//  UserRegistroViewController.m
 //  Medicheck
 //
 //  Created by José Antonio Ruiz del Moral Cervantes on 1/8/16.
 //  Copyright © 2016 Balbina Santana. All rights reserved.
 //
 
-#import "PacienteMedsAgregarViewController.h"
+#import "UserRegistroViewController.h"
 
-@interface PacienteMedsAgregarViewController ()
+@interface UserRegistroViewController ()
 
 @end
 
-@implementation PacienteMedsAgregarViewController
+@implementation UserRegistroViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,19 +34,4 @@
 }
 */
 
-- (IBAction)btnAgregarMed:(id)sender {
-    if(![self.tfNombreMed.text isEqualToString:@""])
-    {
-        NSLog(@"Entro Acción");
-        NSString *nom = self.tfNombreMed.text;
-        NSString *dosi = self.tfDosis.text;
-        NSString *comp = self.tfCompuesto.text;
-        NSString *uni = self.tfUnidades.text;
-       
-        
-        [self.delegado agregaMedicamento:nom withCompuesto:comp withDosis:dosi withUnidades:uni];
-        
-        [self.delegado quitaVista];
-    }
-}
 @end

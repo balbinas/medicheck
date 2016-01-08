@@ -42,7 +42,7 @@
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"showApp"])
+    if ([[segue identifier] isEqualToString:@"verPaciente"])
     {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         Paciente *object = self.listaPacientes[indexPath.row];

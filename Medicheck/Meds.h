@@ -10,4 +10,12 @@
 
 @interface Meds : NSObject
 
+@property(nonatomic,strong) NSString *nombre;
+@property NSInteger dosage;
+@property(nonatomic,strong) NSString *componente;
+@property(nonatomic,strong) NSString *measure;
+
+//@property (nonatomic, strong) NSString *sexo;
+
+- (id) initWithNombre: (NSString*) nom dosage: (NSInteger*) dose componente: (NSString*) comp measure: (NSString*) meas;
 @end

@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "PacienteMedsAgregarViewController.h"
+#import "Meds.h"
 
 @interface MedsPacientesTableViewController : UITableViewController <ProtocoloAgregarMedicamento>
+
+@property (strong, nonatomic) Meds *detailItem;
 
 @end
