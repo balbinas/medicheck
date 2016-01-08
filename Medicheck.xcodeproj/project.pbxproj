@@ -26,6 +26,7 @@
 		37A4F6BD1C3F3BF8003A9645 /* ListaPacientesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6BC1C3F3BF8003A9645 /* ListaPacientesTableViewController.m */; };
 		37A4F6C01C3F4D00003A9645 /* PacienteAppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6BF1C3F4D00003A9645 /* PacienteAppsViewController.m */; };
 		37A4F6C31C3F62CF003A9645 /* Paciente.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4F6C21C3F62CF003A9645 /* Paciente.m */; };
+		37A4F6C61C3F7F59003A9645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A4F6C41C3F7F59003A9645 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		37A4F6BF1C3F4D00003A9645 /* PacienteAppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacienteAppsViewController.m; sourceTree = "<group>"; };
 		37A4F6C11C3F62CF003A9645 /* Paciente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paciente.h; sourceTree = "<group>"; };
 		37A4F6C21C3F62CF003A9645 /* Paciente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Paciente.m; sourceTree = "<group>"; };
+		37A4F6C51C3F7F59003A9645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				37A4F66F1C3EC26C003A9645 /* AppDelegate.m */,
 				37A4F6711C3EC26C003A9645 /* ViewController.h */,
 				37A4F6721C3EC26C003A9645 /* ViewController.m */,
+				37A4F6C41C3F7F59003A9645 /* Main.storyboard */,
 				37A4F6741C3EC26C003A9645 /* Main2.storyboard */,
 				37A4F6A91C3EE616003A9645 /* usuarios.plist */,
 				37A4F67A1C3EC26C003A9645 /* Assets.xcassets */,
@@ -310,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37A4F6B01C3F1FB1003A9645 /* abuelo1.jpg in Resources */,
+				37A4F6C61C3F7F59003A9645 /* Main.storyboard in Resources */,
 				37A4F67E1C3EC26C003A9645 /* LaunchScreen.storyboard in Resources */,
 				37A4F6AD1C3F146C003A9645 /* medicinas-icon.png in Resources */,
 				37A4F6A81C3EE500003A9645 /* Images.xcassets in Resources */,
@@ -399,6 +403,14 @@
 				37A4F67D1C3EC26C003A9645 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		37A4F6C41C3F7F59003A9645 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37A4F6C51C3F7F59003A9645 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
